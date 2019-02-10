@@ -1,0 +1,17 @@
+#component-todo-list {
+	color: #333;
+}
+
+	#component-todo-list .form-check {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	#component-todo-list .form-check label {
+		flex: 1
+	}
+
+	#component-todo-list .form-check.done label {
+		text-decoration: line-through;
+		font-style: italic;
+	}

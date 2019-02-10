@@ -1,7 +1,12 @@
 import { ADD_ITEM, REMOVE_ITEM, DONE_ITEM, UNDONE_ITEM } from '../constants/index';
+import uuid from 'uuid';
 
 const initialState = {
-	items: []
+	items: [
+		{ id: uuid(), is_done: false, text: 'The first item' },
+		{ id: uuid(), is_done: true, text: 'The second item' },
+		{ id: uuid(), is_done: false, text: 'And this is the third item' },
+	]
 };
 
 function rootReducer (state = initialState, action) {
